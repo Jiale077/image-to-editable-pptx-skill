@@ -5,8 +5,8 @@
 需要 Python 3.10+。在终端获取项目并为项目单独安装依赖。
 
 ```sh
-git clone https://github.com/Jiale077/figgenie-editable-pptx.git
-cd figgenie-editable-pptx
+git clone https://github.com/Jiale077/image-to-editable-pptx-skill.git
+cd image-to-editable-pptx-skill
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
@@ -14,7 +14,7 @@ python3 -m pip install -r requirements.txt
 
 Windows PowerShell 的虚拟环境激活命令为 `.venv\Scripts\Activate.ps1`，可用 `python` 替代 `python3`。
 
-可直接让视觉助手读取仓库根目录的 `SKILL.md`。想在 WorkBuddy 中作为技能使用，可以在本机将仓库安装到 `~/.workbuddy/skills/figgenie-editable-pptx`，再让助手读取该目录的 `SKILL.md` 并使用已安装依赖的 Python。Codex 可将目录放到 `~/.agents/skills/`，Claude Code 可放到 `~/.claude/skills/`。安装目录名为 `figgenie-editable-pptx`。
+可直接让视觉助手读取仓库根目录的 `SKILL.md`。想在 WorkBuddy 中作为技能使用，可以在本机将仓库安装到 `~/.workbuddy/skills/image-to-editable-pptx-skill`，再让助手读取该目录的 `SKILL.md` 并使用已安装依赖的 Python。Codex 可将目录放到 `~/.agents/skills/`，Claude Code 可放到 `~/.claude/skills/`。安装目录名为 `image-to-editable-pptx-skill`。
 
 ## 从图片开始
 
@@ -33,7 +33,7 @@ Windows PowerShell 的虚拟环境激活命令为 `.venv\Scripts\Activate.ps1`�
 python3 scripts/export_pptx.py examples/01-rebuilt.svg examples/02-mixed.svg -o runs/demo.pptx
 ```
 
-第一页重建原图的标题、文字、卡片与箭头。第二页演示一张图片与独立文本、形状混排。示例图由本次任务生成，视觉助手根据实际 PNG 重建了第一页。
+第一页重建「企业知识助手架构」的分层版式、六张模块卡片、矢量图标和连接线。第二页演示原图与独立文本、形状混排。视觉助手根据 AI 生成的 PNG 重建了第一页。
 
 | 参数 | 用途 |
 | --- | --- |
@@ -55,12 +55,12 @@ python3 scripts/export_pptx.py examples/01-rebuilt.svg examples/02-mixed.svg -o 
 | 分组 | 用带 `id` 的顶层 `g` 将同一张卡片的形状与文字放在一起 |
 | 复杂效果 | 将相应区域单独保留为 PNG/JPEG。CSS 类样式、遮罩、裁切和渐变需要先处理 |
 
-输出的字体由打开文件的设备决定。代码中的 SVG 坐标按画布等比映射，清晰可读的截图适合重建文字和基础形状。图表原始数据、动画、图层语义和文字识别的准确率取决于可获得的源材料。此批量入口将已带排版度量的 FigGenie 公式作为文字写入。
+输出的字体由打开文件的设备决定。代码中的 SVG 坐标按画布等比映射，清晰可读的截图适合重建文字和基础形状。图表原始数据、动画、图层语义和文字识别的准确率取决于可获得的源材料。批量入口将带有排版度量的公式作为文字写入。
 
 ## 本次验证
 
-- 实际生成并检查两页 PPTX。第一页包含 15 个文本框、4 个形状、2 个连接线。第二页包含 6 个文本框、3 个形状、1 个连接线、1 个图片。
-- 对第一页的标题做了修改、保存和重新读取，核对了 PPTX 中的独立对象；实际示例预览来自 macOS Quick Look。
+- 实际生成并检查两页 PPTX。第一页的模块文字、卡片、线条和矢量图标可逐项编辑，第二页的原图是可独立替换的图片对象。
+- 对第一页的标题和模块文字做了修改、保存和重新读取，核对了 PPTX 中的独立对象。预览来自 macOS Quick Look。
 - 图片重建示例使用原创 AI 生成 PNG。Image 2.5 和 Nano Banana 是可提供图片的来源，运行流程接收的是它们导出的图像文件。
 
 [回到项目首页](../README.md)

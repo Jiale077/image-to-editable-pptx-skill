@@ -31,7 +31,7 @@ class ExportTest(unittest.TestCase):
         self.assertEqual(len(deck.slides), 2)
         self.assertEqual((deck.slide_width, deck.slide_height), (Pt(960), Pt(540)))
         header = next(s for s in deck.slides[0].shapes if s.name == "header")
-        self.assertEqual(header.shapes[0].text, "客户交流准备")
+        self.assertEqual(header.shapes[1].text, "企业知识助手架构")
         self.assertTrue(any(s.shape_type == MSO_SHAPE_TYPE.PICTURE for s in deck.slides[1].shapes))
 
     def test_nonzero_origin_and_letterboxing(self):

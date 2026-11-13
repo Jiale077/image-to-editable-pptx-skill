@@ -13,7 +13,7 @@ from lxml import etree
 from pptx import Presentation
 from pptx.util import Pt
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "vendor/figgenie/scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "vendor/svg_export/scripts"))
 from svg2pptx import Converter, SVG, WARN
 
 XLINK = "{http://www.w3.org/1999/xlink}href"
@@ -66,7 +66,7 @@ def inspect_svg(root, source):
         if name == "image":
             check_image(el.get("href") or el.get(XLINK) or "", source)
         if name == "style":
-            # FigGenie exports may include font-face definitions for SVG viewing.
+            # SVG exports may include font-face definitions for viewing.
             css = re.sub(r"@font-face\s*\{[^}]*\}|/\*.*?\*/", "", el.text or "", flags=re.S)
             if css.strip():
                 issues.append("CSS stylesheet rules: put appearance on individual SVG elements")
@@ -77,7 +77,7 @@ def inspect_svg(root, source):
         if el.get("data-symbol") == "tex" and not all(
             el.get(key) is not None for key in ("data-w", "data-asc", "data-desc", "data-baseline")
         ):
-            raise ValueError("formula needs FigGenie's rendered metrics before export")
+            raise ValueError("formula needs rendered metrics before export")
         if any(el.get(key) for key in ("clip-path", "mask", "filter", "display", "visibility")):
             issues.append(f"<{name}> has clipping, effects, or visibility attributes")
         styles = el.get("style", "")

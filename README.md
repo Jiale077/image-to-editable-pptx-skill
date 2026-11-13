@@ -1,4 +1,6 @@
-# 图片转可编辑 PPT · FigGenie 改编版
+# 图片转可编辑 PPT
+
+![Jiale的AI工坊 · 把原图重建为可编辑 PPT 对象](docs/images/workshop-cover.png)
 
 **把 JPG、PNG、PPT 截图和 AI 生成的设计图重建成可编辑的 PowerPoint。**
 
@@ -10,9 +12,9 @@ Jiale的AI工坊 · [看效果](#看效果) · [第一次使用](docs/getting-st
 
 | AI 生成的 PNG 原图 | 从实际 PPTX 渲染的预览 |
 | --- | --- |
-| ![客户交流准备的原始设计图](examples/source-ai.png) | ![重建后的可编辑幻灯片](docs/images/rebuilt-preview.png) |
+| ![企业知识助手架构原图](examples/source-ai.png) | ![从 PPTX 渲染的可编辑架构图](docs/images/rebuilt-preview.png) |
 
-示例第一页有 **15 个可编辑文本框、4 个形状和 2 个连接线对象**，按版面分组。第二页展示图片和可编辑对象混排，可以单独替换或裁切图片。 [示例 PPTX](examples/editable-demo.pptx) · [重建用 SVG](examples/01-rebuilt.svg)
+示例是一张「企业知识助手架构」图，包含接入、编排与检索、生成与交付，以及数据治理。第一页将六张模块卡片、图标和连线重建成 **22 个文本框、39 个形状和 48 条线**。第二页展示如何把原图保留为图片，同时编辑周围的文字和形状。 [下载示例 PPTX](https://github.com/Jiale077/image-to-editable-pptx-skill/raw/main/examples/editable-demo.pptx) · [重建用 SVG](examples/01-rebuilt.svg)
 
 ## 哪些内容可以改
 
@@ -27,12 +29,12 @@ Jiale的AI工坊 · [看效果](#看效果) · [第一次使用](docs/getting-st
 
 ## 用自己的 JPG 或 PNG
 
-1. 将 [本仓库](https://github.com/Jiale077/figgenie-editable-pptx) 下载到本地，按 [安装教程](docs/getting-started.md#安装依赖) 准备 Python 和依赖。
+1. 将项目下载到本地，按教程准备 Python 和依赖。 [安装教程](docs/getting-started.md#安装依赖)
 2. 把要转换的图片交给可以看图、写文件和运行 Python 的助手，让它读取 [SKILL.md](SKILL.md)。
 3. 可以直接发下面这段话。
 
 ```text
-请用 figgenie-editable-pptx，把这张 PNG 或 JPG 重建成可编辑 PPT。
+请用 image-to-editable-pptx-skill，把这张 PNG 或 JPG 重建成可编辑 PPT。
 标题、正文、卡片和箭头做成独立对象，复杂照片与插画保留为图片。
 请保存重建用的 SVG 和 PPTX，核对原图、文字和输出中的可编辑对象。
 ```
@@ -47,8 +49,8 @@ python3 scripts/export_pptx.py examples/01-rebuilt.svg examples/02-mixed.svg -o 
 
 默认输出 16:9，支持通过 `--size`、`--latin`、`--cjk` 调整画布和字体。 [命令参数与 SVG 写法](docs/getting-started.md)
 
-## 来源与许可
+## 许可证
 
-本项目基于 Sleepy Avacado 的 FigGenie PPTX 导出代码。新增图片重建指南、多页导出、输入检查和原创演示，保留上游 MIT 许可证与署名。 [FigGenie 上游](https://github.com/Sleepy-Avacado/FigGenie-paper-diagram-skill) · [来源及改动](NOTICE.md) · [MIT License](LICENSE)
+本项目采用 MIT 许可。 [许可证全文](LICENSE)
 
-*Rebuild AI-generated slide images and screenshots into editable PowerPoint slides. A vision-capable assistant prepares structured SVG, and the FigGenie-based exporter writes native slide objects.*
+*Rebuild AI-generated designs and screenshots into editable PowerPoint slides. A vision-capable assistant prepares structured SVG, and the exporter writes native slide objects.*

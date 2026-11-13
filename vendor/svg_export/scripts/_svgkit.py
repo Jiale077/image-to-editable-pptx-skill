@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared helpers for the figgenie-paper-diagram scripts: font map, Chromium measurement and rendering.
+"""Shared helpers for the SVG export scripts: font map, Chromium measurement and rendering.
 
 Everything works in SVG user units == pt (the skill's SVG contract: viewBox="0 0 W H", 1 unit = 1 pt).
 

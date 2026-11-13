@@ -1,5 +1,5 @@
 ---
-name: figgenie-editable-pptx
+name: image-to-editable-pptx-skill
 description: Rebuild slide screenshots, JPG/PNG images and AI-generated designs as editable PowerPoint, or export structured SVGs to a multi-slide PPTX. Use when the user wants editable text, diagram shapes and image objects.
 ---
 
