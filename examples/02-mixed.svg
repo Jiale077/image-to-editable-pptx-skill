@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" font-family="Arial, PingFang SC" font-size="24">
+<rect id="background" width="960" height="540" fill="#F7F3ED"/>
+<text x="44" y="73" font-size="38" fill="#101A3D" font-weight="700">复杂图像与可编辑元素一起保留</text>
+<text x="44" y="122" font-size="22" fill="#282B2D">原图作为图片对象，旁边的文字与形状可以逐项修改。</text>
+<rect x="42" y="164" width="568" height="323" rx="12" fill="#FFFFFF" stroke="#998D83" stroke-width="1.5"/>
+<image id="source-preview" x="54" y="176" width="544" height="299" href="source-ai.png"/>
+<g id="edit-guide">
+<rect x="640" y="164" width="278" height="323" rx="14" fill="#FFFFFF" stroke="#998D83" stroke-width="1.5"/>
+<text x="669" y="217" font-size="28" fill="#101A3D" font-weight="700">在 PPT 里继续改</text>
+<line x1="670" y1="238" x2="883" y2="238" stroke="#E96820" stroke-width="3"/>
+<text x="669" y="281" font-size="22" fill="#282B2D">双击文字修改内容</text>
+<text x="669" y="332" font-size="22" fill="#282B2D">选择卡片调整颜色</text>
+<text x="669" y="383" font-size="22" fill="#282B2D">选择图片裁切替换</text>
+</g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" font-family="Arial, PingFang SC" font-size="24">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#E96820"/></marker></defs>
+<rect id="background" width="960" height="540" fill="#F7F3ED"/>
+<g id="header">
+<text x="31" y="97" font-size="54" fill="#101A3D" font-weight="700">客户交流准备</text>
+<text x="32" y="142" font-size="27" fill="#282B2D">从收集材料到确认交流重点</text>
+</g>
+<g id="materials">
+<rect x="33" y="199" width="261" height="235" rx="16" fill="#FFFFFF" stroke="#998D83" stroke-width="1.5"/>
+<text x="59" y="260" font-size="43" fill="#E96820" font-weight="700">01</text>
+<text x="59" y="310" font-size="34" fill="#282B2D" font-weight="700">收集材料</text>
+<text x="62" y="356" font-size="24" fill="#282B2D">客户背景</text>
+<text x="62" y="394" font-size="24" fill="#282B2D">已有方案</text>
+</g>
+<line id="arrow-1" x1="309" y1="318" x2="333" y2="318" stroke="#E96820" stroke-width="4" marker-end="url(#arrow)"/>
+<g id="questions">
+<rect x="349" y="199" width="261" height="235" rx="16" fill="#FFFFFF" stroke="#998D83" stroke-width="1.5"/>
+<text x="375" y="260" font-size="43" fill="#E96820" font-weight="700">02</text>
+<text x="375" y="310" font-size="34" fill="#282B2D" font-weight="700">梳理问题</text>
+<text x="378" y="356" font-size="24" fill="#282B2D">业务痛点</text>
+<text x="378" y="394" font-size="24" fill="#282B2D">待确认项</text>
+</g>
+<line id="arrow-2" x1="625" y1="318" x2="649" y2="318" stroke="#E96820" stroke-width="4" marker-end="url(#arrow)"/>
+<g id="agenda">
+<rect x="666" y="199" width="261" height="235" rx="16" fill="#FFFFFF" stroke="#998D83" stroke-width="1.5"/>
+<text x="692" y="260" font-size="43" fill="#E96820" font-weight="700">03</text>
+<text x="692" y="310" font-size="34" fill="#282B2D" font-weight="700">确定议程</text>
+<text x="695" y="356" font-size="24" fill="#282B2D">演示重点</text>
+<text x="695" y="394" font-size="24" fill="#282B2D">下一步安排</text>
+</g>
+<text x="29" y="506" font-size="19" fill="#282B2D">Jiale的AI工坊</text>
+</svg>
