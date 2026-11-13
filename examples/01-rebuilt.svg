@@ -162,4 +162,5 @@
     <text x="797" y="479" font-size="20" font-weight="700" fill="#20282F" text-anchor="start">质量监控</text>
   </g>
   <text x="18" y="528" font-size="14" font-weight="700" fill="#20282F" text-anchor="start">Jiale的AI工坊</text>
+  <image id="workshop-logo" x="916" y="512" width="28" height="28" href="workshop-logo.png"/>
 </svg>

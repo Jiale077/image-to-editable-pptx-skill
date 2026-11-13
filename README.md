@@ -14,7 +14,7 @@ Jiale的AI工坊 · [看效果](#看效果) · [第一次使用](docs/getting-st
 | --- | --- |
 | ![企业知识助手架构原图](examples/source-ai.png) | ![从 PPTX 渲染的可编辑架构图](docs/images/rebuilt-preview.png) |
 
-示例是一张「企业知识助手架构」图，包含接入、编排与检索、生成与交付，以及数据治理。第一页将六张模块卡片、图标和连线重建成 **22 个文本框、39 个形状和 48 条线**。第二页展示如何把原图保留为图片，同时编辑周围的文字和形状。 [下载示例 PPTX](https://github.com/Jiale077/image-to-editable-pptx-skill/raw/main/examples/editable-demo.pptx) · [重建用 SVG](examples/01-rebuilt.svg)
+示例是一张「企业知识助手架构」图，包含接入、编排与检索、生成与交付，以及数据治理。第一页将六张模块卡片、图标和连线重建成 **22 个文本框、39 个形状和 48 条线**，右下角的「Jiale的AI工坊」Logo 可单独移动或替换。第二页展示如何把原图保留为图片，同时编辑周围的文字和形状。 [下载示例 PPTX](https://github.com/Jiale077/image-to-editable-pptx-skill/raw/main/examples/editable-demo.pptx) · [重建用 SVG](examples/01-rebuilt.svg)
 
 ## 哪些内容可以改
 
